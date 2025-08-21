@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Lafar Ayoub – Fullstack Developer (Laravel & ReactJS)</title>
+  <meta name="description" content="Portfolio of Lafar Ayoub – Fullstack Developer (Laravel & ReactJS). Projects, skills, and contact." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="logo" aria-label="Go to top">
+        <span class="logo-mark">&lt;/&gt;</span> LR-Portfolio
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#home" class="nav-link active" data-link>Home</a></li>
+        <li role="none"><a role="menuitem" href="#about" class="nav-link" data-link>About</a></li>
+        <li role="none"><a role="menuitem" href="#skills" class="nav-link" data-link>Skills</a></li>
+        <li role="none"><a role="menuitem" href="#projects" class="nav-link" data-link>Projects</a></li>
+        <li role="none"><a role="menuitem" href="#testimonials" class="nav-link" data-link>Testimonials</a></li>
+        <li role="none"><a role="menuitem" href="#contact" class="nav-link" data-link>Contact</a></li>
+        <!-- <li class="theme-toggle" role="none">
+          <button id="themeBtn" aria-label="Toggle theme"><i class="fa-regular fa-moon"></i></button>
+        </li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home" aria-label="Hero">
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner container">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1 class="headline">Lafar Ayoub</h1>
+      <h2 class="subhead"><span id="typing"></span></h2>
+      <p class="intro">
+        Fullstack developer specializing in <strong>Laravel</strong> & <strong>ReactJS</strong>. I build fast, scalable, and delightful web apps.
+      </p>
+      <div class="cta">
+        <a href="#projects" class="btn primary"><i class="fa-solid fa-code"></i> View Projects</a>
+        <a href="mailto:ayoub_pr_lr10@hotmail.com" class="btn outline"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+        <a class="btn ghost" href="ayoub_lafar_cv.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+      </div>
+      <div class="socials" aria-label="Social links">
+        <a href="https://github.com/lafar10" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ayoub-lafar-513934312" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll to About"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section container">
+    <header class="section-head">
+      <h3><i class="fa-solid fa-user-gear"></i> About</h3>
+      <span class="hr"></span>
+    </header>
+    <div class="about-grid">
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="ay.jpg" alt="Developer at desk" />
+        </div>
+      </div>
+      <div class="about-text">
+        <h4>Who am I?</h4>
+        <p>
+          I'm Ayoub, a fullstack developer with a love for clean code, smooth UX, and solid architecture. I solve real problems with Laravel backends and React frontends.
+        </p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-circle-check"></i> Strong in RESTful APIs, auth, and caching.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Pixel-perfect UI and responsive layouts.</li>
+          <li><i class="fa-solid fa-circle-check"></i> CI/CD, Git workflows, and best practices.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section container">
+    <header class="section-head">
+      <h3><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h3>
+      <span class="hr"></span>
+    </header>
+
+    <div class="skills-grid">
+      <!-- Laravel -->
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <i class="fa-brands fa-laravel"></i>
+          <h4>Laravel</h4>
+        </div>
+        <div class="bar"><span data-skill="92"></span></div>
+      </div>
+      <!-- ReactJS -->
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <i class="fa-brands fa-react"></i>
+          <h4>ReactJS</h4>
+        </div>
+        <div class="bar"><span data-skill="88"></span></div>
+      </div>
+      <!-- PHP -->
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <i class="fa-brands fa-php"></i>
+          <h4>PHP</h4>
+        </div>
+        <div class="bar"><span data-skill="90"></span></div>
+      </div>
+      <!-- MySQL -->
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <i class="fa-solid fa-database"></i>
+          <h4>MySQL</h4>
+        </div>
+        <div class="bar"><span data-skill="85"></span></div>
+      </div>
+      <!-- HTML/CSS/JS -->
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <i class="fa-solid fa-code"></i>
+          <h4>HTML / CSS / JS</h4>
+        </div>
+        <div class="bar"><span data-skill="94"></span></div>
+      </div>
+      <!-- WordPress -->
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <i class="fa-brands fa-wordpress"></i>
+          <h4>WordPress</h4>
+        </div>
+        <div class="bar"><span data-skill="78"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section container">
+    <header class="section-head">
+      <h3><i class="fa-solid fa-diagram-project"></i> Projects</h3>
+      <span class="hr"></span>
+    </header>
+
+    <div class="projects-grid">
+      <!-- Project 1 with YouTube embed -->
+      <article class="project-card reveal">
+        <div class="project-media ratio">
+          <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/9hzcQIoJrPI?si=gxb0Qzr8Q2qed_0w" title="Project Demo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="project-body">
+          <h4>Restaurant SPA Web Site</h4>
+          <p>Admin dashboard built with Laravel API + React (Vite). Role-based auth, Reservations, Payments, Promotions, Invoices.</p>
+          <div class="tags">
+            <span>Laravel</span><span>React</span><span>REST</span><span>Vite</span><span>Bootstrap</span>
+          </div>
+          <div class="actions">
+            <a href="https://github.com/lafar10/Gestion-Restaurent-ReactJS-Laravel-" class="btn sm outline"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://www.youtube.com/watch?v=9hzcQIoJrPI" class="btn sm outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal">
+        <div class="project-media ratio">
+          <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/YeTKEOwHttA?si=7903ES6Ntw6F0B1s" title="Project Demo 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="project-body">
+          <h4>Sté Transport Platform</h4>
+          <p>Admin dashboard built with Laravel + MySQL . Role-based auth, Reservations, Payments, Commands, Invoices.</p>
+          <div class="tags">
+            <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+          </div>
+          <div class="actions">
+            <a href="https://github.com/lafar10/Trans-Logi" class="btn sm outline"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://www.youtube.com/watch?v=YeTKEOwHttA" class="btn sm outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal">
+        <div class="project-media ratio">
+          <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/Wc-vtPC26dI?si=v65jKN0ofQM_J2Ry" title="Project Demo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="project-body">
+          <h4>Clinic Medical Plateform</h4>
+          <p>Admin dashboard built with Laravel + MySQL . Role-based auth, Appointments, Payments, Docotrs, Patients, Invoices.</p>
+          <div class="tags">
+            <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+          </div>
+          <div class="actions">
+            <a href="https://github.com/lafar10/clinic-laravel" class="btn sm outline"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://www.youtube.com/watch?v=Wc-vtPC26dI" class="btn sm outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card reveal">
+        <div class="project-media ratio">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/seQuAGCSlBs?si=Z_DGYhrSiPZIE3c4" title="Project Demo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="project-body">
+          <h4>Agence De Location Web Site</h4>
+          <p>Admin dashboard built with Laravel + MySQL . Role-based auth, Cars, Payments, Clients, Contracts, Invoices, Insurances.</p>
+          <div class="tags">
+            <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+          </div>
+          <div class="actions">
+            <a href="https://github.com/lafar10/Gestion_Location_Car/tree/master" class="btn sm outline"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://www.youtube.com/watch?v=seQuAGCSlBs" class="btn sm outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </article>
+      
+      <!-- Project 5 -->
+      <article class="project-card reveal">
+        <div class="project-media ratio">
+          <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/46Gg1AIuQ00?si=3LFLlxy_sgrcuPFG" title="Project Demo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="project-body">
+          <h4>Private Institut Web Site</h4>
+          <p>Admin dashboard built with Laravel + MySQL . Role-based auth, Students, Payments, Invoices, Insurances.</p>
+          <div class="tags">
+            <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+          </div>
+          <div class="actions">
+            <a href="https://github.com/lafar10/Gestion-Institute-Private-PHP" class="btn sm outline"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://www.youtube.com/watch?v=46Gg1AIuQ00" class="btn sm outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section container">
+    <header class="section-head">
+      <h3><i class="fa-solid fa-comments"></i> Testimonials</h3>
+      <span class="hr"></span>
+    </header>
+    <div class="testimonials">
+      <figure class="testimonial reveal">
+        <blockquote>
+          “Ayoub delivered beyond expectations. Clean code, great communication, and on-time delivery.”
+        </blockquote>
+        <figcaption>
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" alt="Client avatar" />
+          <div>
+            <strong>Sarah L.</strong>
+            <span>Product Manager, FinTech</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial reveal">
+        <blockquote>
+          “Our e-commerce performance improved massively. Highly recommend working with Ayoub.”
+        </blockquote>
+        <figcaption>
+          <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=400&auto=format&fit=crop" alt="Client avatar" />
+          <div>
+            <strong>Omar K.</strong>
+            <span>CTO, Retail</span>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Contact Section (labels only, no submit) -->
+  <section id="contact" class="section container">
+    <header class="section-head">
+      <h3><i class="fa-solid fa-envelope"></i> Contact</h3>
+      <span class="hr"></span>
+    </header>
+    <div class="contact-grid" style="text-align: center;justify-content: center;align-items: center;">
+      <div class="contact-card reveal">
+        <h3><i class="fa-solid fa-id-badge"></i> Get in touch</h3>
+        <div class="form-like">
+          <h4><i class="fa-solid fa-info"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lafar Ayoub</h4>
+          
+
+          <h4><i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;&nbsp;&nbsp; ayoub_pr_lr10@hotmail.com</h4>
+          
+
+          <h4><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;&nbsp; +212 6 23 79 35 49</h4>
+          
+
+          <p class="hint"><i class="fa-solid fa-circle-info"></i> This is a preview only. No submission — contact via email or socials.</p>
+        </div>
+      </div>
+      <div class="contact-card reveal">
+        <h4><i class="fa-solid fa-paper-plane"></i> Direct</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-at"></i> <a href="mailto:ayoub@example.com">ayoub_pr_lr10@hotmail.com</a></li>
+          <li><i class="fa-brands fa-github"></i> <a href="#">https://github.com/lafar10</a></li>
+          <li><i class="fa-brands fa-linkedin"></i> <a href="#">https://www.linkedin.com/in/ayoub-lafar-513934312</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Morocco</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Lafar Ayoub. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
